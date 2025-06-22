@@ -23,7 +23,7 @@ $instagramLink = "#";
                     <div class="contact-info-icon">
                         <img src="/Lucida/public/images/Mail.svg" alt="Email Icon">
                     </div>
-                    <div class="contact-info-text">
+                    <div class="contact-info-text"> 
                         <h3>Email Us</h3>
                         <p>We are here to help</p>
                         <a href="mailto:<?php echo htmlspecialchars($contactEmail); ?>"><?php echo htmlspecialchars($contactEmail); ?></a>
@@ -62,8 +62,6 @@ $instagramLink = "#";
                 </div>
             </div>
 
-
-
             <div class="contact-form-column">
                 <div class="contact-form-card">
                 <?php if (isset($_GET['status'])): ?>
@@ -74,15 +72,15 @@ $instagramLink = "#";
                 <?php elseif ($_GET['status'] == 'error'): ?>
                     <div class="feedback-message error">
                         <p>
-                        <strong>Error:</strong> 
+                        <strong>Error:</strong>
                 <?php echo htmlspecialchars($_GET['message'] ?? 'An unknown error occurred. Please try again.'); ?>
                         </p>
                     </div>
                 <?php endif; ?>
                 <?php endif; ?>
-                
+
                     <h3>Send us a message</h3>
-                    <form action="handler.php" method="POST" class="main-contact-form">
+                    <form action="../config/handler.php" method="POST" class="main-contact-form">
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="fullName">Full Name</label>
@@ -99,7 +97,11 @@ $instagramLink = "#";
                         </div>
                         <div class="form-group">
                             <label for="message">How can we help?</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <textarea id="message" name="message" rows="5" required><?php
+                            if(isset($_GET['service'])) {
+                                echo "I'm interested in your " . htmlspecialchars($_GET['service']) . " services.";
+                            }
+                            ?></textarea>
                         </div>
                         <button type="submit" class="btn-submit-message">Send Message</button>
                     </form>

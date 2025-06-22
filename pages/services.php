@@ -20,6 +20,7 @@ include '../includes/header.php';
     <section class="services-grid-section">
         <div class="container">
             <div class="s-grid">
+                <a href="/Lucida/pages/contact.php?service=Management%20Consulting" class="s-card-link">
                 <div class="s-card">
                     <div class="s-card-icon-wrapper bg-management">
                         <i class="fas fa-briefcase s-card-icon"></i>
@@ -35,7 +36,9 @@ include '../includes/header.php';
                         <li><i class="fas fa-check"></i> Digital Business consulting</li>
                     </ul>
                 </div>
+                </a>
 
+                <a href="/Lucida/pages/contact.php?service=Strategy%20Consulting" class="s-card-link">
                 <div class="s-card">
                     <div class="s-card-icon-wrapper bg-strategy">
                         <i class="fas fa-chart-line s-card-icon"></i>
@@ -50,7 +53,9 @@ include '../includes/header.php';
                         <li><i class="fas fa-check"></i> Innovation and New Product Development</li>
                     </ul>
                 </div>
+                </a>
 
+                <a href="/Lucida/pages/contact.php?service=Financial%20Consulting" class="s-card-link">
                 <div class="s-card">
                     <div class="s-card-icon-wrapper bg-financial">
                         <i class="fas fa-dollar-sign s-card-icon"></i>
@@ -65,7 +70,9 @@ include '../includes/header.php';
                         <li><i class="fas fa-check"></i> Financial Modeling and Analysis</li>
                     </ul>
                 </div>
+                </a>
 
+                <a href="/Lucida/pages/contact.php?service=IT%20%26%20Technology%20Consulting" class="s-card-link">
                 <div class="s-card">
                     <div class="s-card-icon-wrapper bg-it">
                         <i class="fas fa-laptop-code s-card-icon"></i> 
@@ -81,7 +88,9 @@ include '../includes/header.php';
                         <li><i class="fas fa-check"></i> Blockchain Consulting</li>
                     </ul>
                 </div>
+                </a>
 
+                <a href="/Lucida/pages/contact.php?service=Marketing%20Consulting" class="s-card-link">
                 <div class="s-card">
                     <div class="s-card-icon-wrapper bg-marketing">
                          <i class="fas fa-bullhorn s-card-icon"></i>
@@ -96,7 +105,9 @@ include '../includes/header.php';
                         <li><i class="fas fa-check"></i> Content Marketing Consulting</li>
                     </ul>
                 </div>
+                </a>
 
+                <a href="/Lucida/pages/contact.php?service=Design%20%26%20Web%20Development" class="s-card-link">
                 <div class="s-card">
                     <div class="s-card-icon-wrapper bg-design">
                         <i class="fas fa-palette s-card-icon"></i>
@@ -112,10 +123,11 @@ include '../includes/header.php';
 
                     </ul>
                 </div>
+                </a>
             </div>
 
             <div class="services-page-cta-container">
-                <a href="#" class="btn-schedule-call">Schedule A Call</a>
+                <a href="/Lucida/pages/contact.php" class="btn-schedule-call">Schedule A Call</a>
             </div>
         </div>
     </section>
@@ -158,7 +170,7 @@ include '../includes/header.php';
                 </div>
             </div>
             <div class="hwd-cta-container">
-                <a href="#" class="btn-get-started-hwd">GET STARTED</a>
+                <a href="/Lucida/pages/contact.php" class="btn-get-started-hwd">GET STARTED</a>
             </div>
         </div>
     </section>

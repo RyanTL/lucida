@@ -23,7 +23,7 @@ include 'includes/header.php';
 ?>
 
     <main>
-        <section class="hero" style="background-image: url('/Lucida/public/images/bg.png');">
+        <section class="hero" style="background-image: url('/Lucida/public/images/bg.webp');">
             <div class="hero-content">
                 <span class="hero-label">— Lucida Management Group</span>
                 <h1>
@@ -38,23 +38,36 @@ include 'includes/header.php';
                 <a href="/Lucida/pages/about.php" class="btn btn-secondary">About Us</a>
             </div>
 
-            <form class="contact-form">
+            <form action="config/handler.php" method="POST" class="contact-form">
+                <?php if (isset($_GET['status'])): ?>
+                    <?php if ($_GET['status'] == 'success'): ?>
+                        <div class="feedback-message success">
+                            Thank you! We will be in touch shortly.
+                        </div>
+                    <?php elseif ($_GET['status'] == 'error'): ?>
+                        <div class="feedback-message error">
+                            <strong>Error:</strong> <?php echo htmlspecialchars($_GET['message'] ?? 'An error occurred.'); ?>
+                        </div>
+                    <?php endif; ?>
+                <?php endif; ?>
+
+                <input type="hidden" name="form_source" value="index_form">
+
                 <div class="input-group">
                     <i class="fa fa-user"></i>
-                    <input type="text" placeholder="Name" required>
+                    <input type="text" name="fullName" placeholder="Name" required>
                 </div>
                 <div class="input-group">
                     <i class="fa fa-envelope"></i>
-                    <input type="email" placeholder="Email" required>
+                    <input type="email" name="emailAddress" placeholder="Email" required>
                 </div>
                 <div class="input-group">
                     <i class="fa fa-phone"></i>
-                    <input type="tel" placeholder="Phone Number" required>
+                    <input type="tel" name="phoneNumber" placeholder="Phone Number" required>
                 </div>
                 <button type="submit">GET STARTED</button>
             </form>
         </section>
-
         
 
        <section class="detailed-services-section">

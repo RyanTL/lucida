@@ -1,0 +1,33 @@
+[2025-06-20 03:54:43] [TEST] Test error message from test script
+[2025-06-20 03:54:43] [TEST] Simulated database error: No such file or directory
+[2025-06-20 03:55:09] [FATAL] Database Connection Failed: No such file or directory
+[2025-06-20 03:56:49] [INFO] Database connection successful
+[2025-06-20 03:56:49] [ERROR] PHP Error [2]: Undefined array key "REQUEST_METHOD" in /Applications/XAMPP/xamppfiles/htdocs/Lucida/config/handler.php on line 83
+[20-Jun-2025 03:56:49 UTC] PHP Warning:  Undefined array key "REQUEST_METHOD" in /Applications/XAMPP/xamppfiles/htdocs/Lucida/config/handler.php on line 83
+[2025-06-20 03:56:49] [INFO] Database connection closed
+[2025-06-20 03:56:49] [ERROR] PHP Error [1024]: Test error for debugging - handler loaded successfully in /Applications/XAMPP/xamppfiles/htdocs/Lucida/config/handler.php on line 142
+[20-Jun-2025 03:56:49 UTC] PHP Notice:  Test error for debugging - handler loaded successfully in /Applications/XAMPP/xamppfiles/htdocs/Lucida/config/handler.php on line 142
+[2025-06-20 03:57:51] [INFO] Database connection successful
+[2025-06-20 03:57:51] [INFO] Database connection closed
+[2025-06-20 05:59:20] [INFO] Database connection successful
+[2025-06-20 05:59:20] [INFO] Form submission started
+[2025-06-20 05:59:20] [INFO] Form data received: Name=Ryan Torres, Email=ryantorres614@gmail.com, Phone=9392544724
+[2025-06-20 05:59:21] [INFO] Form submission successful for ryantorres614@gmail.com
+[2025-06-20 05:59:21] [INFO] Database connection closed
+[2025-06-20 05:59:36] [INFO] Database connection successful
+[2025-06-20 05:59:36] [INFO] Form submission started
+[2025-06-20 05:59:36] [INFO] Form data received: Name=Ryan Torres, Email=ryantorres614@gmail.com, Phone=9392544724
+[2025-06-20 05:59:36] [INFO] Form submission successful for ryantorres614@gmail.com
+[2025-06-20 05:59:36] [INFO] Database connection closed
+[2025-06-20 06:00:21] [FATAL] Database Connection Failed: Unknown database 'lucida_ntact'
+[2025-06-20 06:00:21] [ERROR_PAGE] Error page accessed with code: db_connect_error, message: Database connection failed
+[2025-06-20 06:04:52] [INFO] Database connection successful
+[2025-06-20 06:04:52] [INFO] Form submission started
+[2025-06-20 06:04:52] [INFO] Form data received: Name=Ryan Torres, Email=ryantorres614@gmail.com, Phone=9392544724
+[2025-06-20 06:04:52] [INFO] Form submission successful for ryantorres614@gmail.com
+[2025-06-20 06:04:52] [INFO] Database connection closed
+[2025-06-20 19:39:52] [INFO] Database connection successful
+[2025-06-20 19:39:52] [INFO] Form submission started
+[2025-06-20 19:39:52] [INFO] Form data received: Name=Ryan Torres, Email=ryantorres614@gmail.com, Phone=9392544724, Source=index_form
+[2025-06-20 19:39:52] [INFO] Form submission successful for ryantorres614@gmail.com
+[2025-06-20 19:39:52] [INFO] Database connection closed
