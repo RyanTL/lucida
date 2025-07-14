@@ -1,5 +1,14 @@
 <?php
+// SEO Configuration for About Page
+$page_title = "About Lucida Management Group | Expert Business Consulting Team";
+$page_description = "Learn about Lucida Management Group's experienced team of business consultants. We specialize in management, strategy, financial, and technology consulting to help businesses achieve sustainable growth.";
+$page_keywords = "about lucida management group, business consulting team, management consulting experts, strategy consultants, business consulting company, professional consulting services, business growth specialists";
+$canonical_url = "https://lucidamanagement.com/pages/about.php";
+$og_image = "https://lucidamanagement.com/Lucida/public/images/logo.svg";
+$page_type = "website";
 
+// This is the about us page displaying company information and team members
+// Array containing team member information for display
 $team_members = [
     [
         'image' => 'https://placehold.co/100x100/E0E0E0/B0B0B0?text=I.M.',
@@ -31,11 +40,13 @@ $team_members = [
     ],
 ];
 
+// Include the site header
 include '../includes/header.php';
 ?>
 
 <main>
 
+<!-- This is the main about us section with company description -->
 <section class="about-who-we-are-section">
         <div class="awwa-container">
             <div class="awwa-left-content">
@@ -59,6 +70,7 @@ include '../includes/header.php';
                 <img src="/Lucida/public/images/logoblanco.svg" alt="Lucida Management Group" class="awwa-logo-svg">
             </div>
         </div>
+        <!-- Logo banner with client testimonials -->
         <div class="awwa-logo-banner-container">
             <div class="awwa-logo-banner-track">
                 <div class="awwa-logo-item"><img src="/Lucida/public/images/awk-logo-white.png" alt="Client Logo 1"></div>
@@ -77,6 +89,7 @@ include '../includes/header.php';
         </div>
 </section>
 
+<!-- This is the industries section showing sectors we work in -->
 <section class="industries-section">
     <div class="container">
         <h2 class="industries-main-title">Industries We Work</h2>
@@ -112,6 +125,7 @@ include '../includes/header.php';
     </div>
 </section>
 
+<!-- This is the mission and vision section -->
 <section class="mission-vision-section">
         <div class="mv-container">
             <div class="mv-main-mission">
@@ -137,6 +151,7 @@ include '../includes/header.php';
         </div>
 </section>
 
+<!-- This is the target audience section -->
 <section class="who-we-target-section">
     <div class="container">
         <h2 class="w-w-t-main-title">Who We Target?</h2>
@@ -169,6 +184,7 @@ include '../includes/header.php';
         </div>
     </div>
 </section>
+<!-- Commented out section for how we work -->
 <!--
 <section class="how-we-work-section">
         <div class="hww-container">
@@ -201,11 +217,13 @@ include '../includes/header.php';
 </section>
 -->
 
+<!-- This is the team section displaying team member cards -->
 <section class="team-section">
     <div class="container">
         <h2 class="team-main-title">Our Team</h2>
         <p class="team-subtitle">Meet the minds Behind Our Success</p>
         <div class="team-grid">
+            <!-- Loop through team members and display each member card -->
             <?php foreach ($team_members as $member): ?>
             <div class="team-member-card">
                 <div class="card-top">
@@ -232,6 +250,7 @@ include '../includes/header.php';
 </main>
 
 <?php
+// Include the site footer
 include '../includes/footer.php';
 ?>
 

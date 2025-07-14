@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://lucidamanagement.com/sitemap.xml
+
+# Disallow error logs and config files for security
+Disallow: /error_logs/
+Disallow: /config/
+
+# Allow CSS and JS files for proper rendering
+Allow: /public/css/
+Allow: /public/js/
+Allow: /public/images/
+
+# Crawl delay (optional)
+Crawl-delay: 1

@@ -1,13 +1,16 @@
 <?php
-
+// This is the reusable contact form component with contact information
+// Configuration variables for contact information display
 $contactEmail = "lucida@example.com";
 $contactPhone = "816-327-0142";
 $facebookLink = "#";
 $instagramLink = "#";
 ?>
 
+<!-- Main contact section with information and form -->
 <section class="contact-section-container">
     <div class="container">
+        <!-- Contact section header with title and description -->
         <div class="contact-section-header">
             <span class="contact-badge">Contact</span>
             <h2 class="contact-main-title">Ready To Transform Your Business?</h2>
@@ -17,8 +20,11 @@ $instagramLink = "#";
             </p>
         </div>
 
+        <!-- Two-column layout for contact info and form -->
         <div class="contact-content-wrapper">
+            <!-- Left column with contact information blocks -->
             <div class="contact-info-column">
+                <!-- Email contact block -->
                 <div class="contact-info-block">
                     <div class="contact-info-icon">
                         <img src="/Lucida/public/images/Mail.svg" alt="Email Icon">
@@ -30,6 +36,7 @@ $instagramLink = "#";
                     </div>
                 </div>
 
+                <!-- Phone contact block -->
                 <div class="contact-info-block">
                     <div class="contact-info-icon">
                         <img src="/Lucida/public/images/phone.svg" alt="Phone Icon">
@@ -41,6 +48,7 @@ $instagramLink = "#";
                     </div>
                 </div>
 
+                <!-- Facebook contact block -->
                 <div class="contact-info-block">
                     <div class="contact-info-icon">
                         <img src="/Lucida/public/images/facebook.svg" alt="Facebook Icon">
@@ -51,6 +59,7 @@ $instagramLink = "#";
                     </div>
                 </div>
 
+                <!-- Instagram contact block -->
                 <div class="contact-info-block">
                     <div class="contact-info-icon">
                         <img src="/Lucida/public/images/instagram.svg" alt="Instagram Icon">
@@ -62,8 +71,10 @@ $instagramLink = "#";
                 </div>
             </div>
 
+            <!-- Right column with contact form -->
             <div class="contact-form-column">
                 <div class="contact-form-card">
+                <!-- Display success or error messages after form submission -->
                 <?php if (isset($_GET['status'])): ?>
                 <?php if ($_GET['status'] == 'success'): ?>
                     <div class="feedback-message success">
@@ -79,8 +90,10 @@ $instagramLink = "#";
                 <?php endif; ?>
                 <?php endif; ?>
 
+                    <!-- Contact form with validation -->
                     <h3>Send us a message</h3>
                     <form action="../config/handler.php" method="POST" class="main-contact-form">
+                        <!-- Form row with name and email fields -->
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="fullName">Full Name</label>
@@ -91,13 +104,16 @@ $instagramLink = "#";
                                 <input type="email" id="emailAddress" name="emailAddress" required>
                             </div>
                         </div>
+                        <!-- Phone number field -->
                         <div class="form-group">
                             <label for="phoneNumber">Phone Number</label>
                             <input type="tel" id="phoneNumber" name="phoneNumber">
                         </div>
+                        <!-- Message textarea with service pre-population -->
                         <div class="form-group">
                             <label for="message">How can we help?</label>
                             <textarea id="message" name="message" rows="5" required><?php
+                            // Pre-populate message if service parameter is provided
                             if(isset($_GET['service'])) {
                                 echo "I'm interested in your " . htmlspecialchars($_GET['service']) . " services.";
                             }

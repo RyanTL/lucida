@@ -1,3 +1,4 @@
+<!-- This is the error page that displays user-friendly error messages -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,19 +19,22 @@
     </style>
 </head>
 <body>
+    <!-- Main error container with styling -->
     <div class="error-container">
         <h1>Oops! Something Went Wrong.</h1>
         
         <?php
+        // Get error information from URL parameters
         $errorCode = $_GET['code'] ?? 'unknown';
         $errorMessage = $_GET['message'] ?? '';
         
-        // Log the error page visit
+        // Log the error page visit for tracking purposes
         $logFile = __DIR__ . '/../error_logs/errors.log';
         $timestamp = date('Y-m-d H:i:s');
         $logMessage = "[$timestamp] [ERROR_PAGE] Error page accessed with code: $errorCode" . ($errorMessage ? ", message: $errorMessage" : "") . PHP_EOL;
         file_put_contents($logFile, $logMessage, FILE_APPEND | LOCK_EX);
         
+        // Display appropriate error message based on error code
         switch($errorCode) {
             case 'db_connect_error':
                 echo '<p>We\'re experiencing technical difficulties with our database connection. We apologize for the inconvenience.</p>';
@@ -53,18 +57,22 @@
         }
         ?>
         
+        <!-- Display detailed error message if provided -->
         <?php if ($errorMessage): ?>
             <div class="error-message">
                 <strong>Details:</strong> <?php echo htmlspecialchars($errorMessage); ?>
             </div>
         <?php endif; ?>
         
+        <!-- Display error code for technical reference -->
         <div class="error-code">
             Error Code: <?php echo htmlspecialchars($errorCode); ?>
         </div>
         
+        <!-- Reassurance message and recovery options -->
         <p>Our team has been notified and is working to fix the problem. Please try again in a few moments.</p>
         
+        <!-- Navigation options for user recovery -->
         <p>
             <a href="/Lucida/pages/contact.php">Try Contact Form Again</a>
             <a href="/Lucida/index.php" class="btn-home">Go to Homepage</a>

@@ -1,13 +1,13 @@
-# Business Consultant Website
+# Lucida Management Group 
 
-This project is a simple website for a business consultant, built using HTML, CSS, JavaScript, PHP, and SQL with an XAMPP database. The website includes several pages that provide information about the consultant's services, training programs, and contact details.
+This project is built using HTML, CSS, JavaScript, PHP, and SQL with an XAMPP database. The website includes several pages that provide information about the consultant's services, training programs, and contact details. 
 
 ## Project Structure
 
 The project is organized as follows:
 
 ```
-business-consultant-website
+lucida
 ├── public
 │   ├── css
 │   │   └── style.css          # CSS styles for the website
@@ -35,14 +35,5 @@ business-consultant-website
 1. **Clone the Repository**: Download or clone the repository to your local machine.
 2. **Install XAMPP**: Ensure that XAMPP is installed and running on your machine.
 3. **Database Setup**: Configure the database settings in `config/database.php` to connect to your XAMPP SQL database.
-4. **Access the Website**: Place the project folder in the `htdocs` directory of your XAMPP installation. Access the website by navigating to `http://localhost/business-consultant-website` in your web browser.
-
-## Features
-
-- **Responsive Design**: The website is designed to be responsive and user-friendly.
-- **Reusable Components**: The header and footer are included in all pages for consistency.
-- **Dynamic Content**: JavaScript is used to enhance user interaction and experience.
-
-## License
-
-This project is open-source and available for modification and distribution.
+4. **Start the server**: Turn on the servers in XAMPP manager.
+5. **Access the Website**: Place the project folder in the `htdocs` directory of your XAMPP installation. Access the website by navigating to `http://localhost/lucida` in your web browser.

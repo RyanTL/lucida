@@ -1,5 +1,13 @@
 <?php
+// SEO Configuration for Homepage
+$page_title = "Expert Business Consulting Services | Lucida Management Group";
+$page_description = "Transform your business with Lucida Management Group's expert consulting services. We specialize in management, strategy, financial, IT, marketing consulting, and web development. Get started today!";
+$page_keywords = "business consulting, management consulting services, strategy consulting, financial consulting, IT consulting, marketing consulting, web development, business growth, digital transformation, startup consulting, leadership coaching";
+$canonical_url = "https://lucidamanagement.com/";
+$og_image = "https://lucidamanagement.com/Lucida/public/images/bg.webp";
+$page_type = "website";
 
+// This is the testimonials data array containing client reviews and information
 $testimonials = [
     [
         'image' => '/Lucida/public/images/pfp1.jpg', 
@@ -19,26 +27,31 @@ $testimonials = [
     ],
 ];
 
+// Include the site header with navigation and branding
 include 'includes/header.php';
 ?>
 
     <main>
+        <!-- This is the hero section with background image, main heading, and contact form -->
         <section class="hero" style="background-image: url('/Lucida/public/images/bg.webp');">
             <div class="hero-content">
                 <span class="hero-label">— Lucida Management Group</span>
-                <h1>
+                <h1 itemprop="headline">
                     We are the <span class="highlight">best</span> at what we do,<br>
                     <span class="highlight">help</span> business grow.
                 </h1>
-                <p>If you are feeling lost, but got a business idea, we can make it reality without all the hassle.</p>
+                <p itemprop="description">If you are feeling lost, but got a business idea, we can make it reality without all the hassle.</p>
             </div>
 
+            <!-- This is the hero buttons section with call-to-action links -->
             <div class="hero-buttons">
                 <a href="#" class="btn btn-primary">Get Started</a>
                 <a href="/Lucida/pages/about.php" class="btn btn-secondary">About Us</a>
             </div>
 
+            <!-- This is the hero contact form for lead generation -->
             <form action="config/handler.php" method="POST" class="contact-form">
+                <!-- This displays success or error messages after form submission -->
                 <?php if (isset($_GET['status'])): ?>
                     <?php if ($_GET['status'] == 'success'): ?>
                         <div class="feedback-message success">
@@ -51,8 +64,10 @@ include 'includes/header.php';
                     <?php endif; ?>
                 <?php endif; ?>
 
+                <!-- Hidden field to identify which form was submitted -->
                 <input type="hidden" name="form_source" value="index_form">
 
+                <!-- Form input fields with icons -->
                 <div class="input-group">
                     <i class="fa fa-user"></i>
                     <input type="text" name="fullName" placeholder="Name" required>
@@ -69,83 +84,85 @@ include 'includes/header.php';
             </form>
         </section>
         
-
+        <!-- This is the detailed services section showcasing all company services -->
        <section class="detailed-services-section">
             <div class="container">
                 <div class="services-badge-container">
                     <span class="services-badge">Services</span>
                 </div>
 
+                <!-- This is the services grid displaying service cards -->
                 <div class="services-grid">
                     <div class="service-card">
                         <div class="service-card-header"> 
                             <div class="service-card-icon">
-                                <i class="fa-solid fa-briefcase"></i>
+                                <i class="fa-solid fa-briefcase" aria-label="Management Consulting Icon"></i>
                             </div>
-                            <h3 class="service-card-title">Management Consulting</h3>
+                            <h3 class="service-card-title" itemprop="serviceType">Management Consulting</h3>
                         </div>
-                        <p class="service-card-description">Grow smarter with Lucida's management expertise. From business planning and startup strategies to project management and digital solutions, we help you navigate every step of your journey.</p>
+                        <p class="service-card-description" itemprop="description">Grow smarter with Lucida's management expertise. From business planning and startup strategies to project management and digital solutions, we help you navigate every step of your journey.</p>
                     </div>
 
                     <div class="service-card">
                         <div class="service-card-header">
                             <div class="service-card-icon">
-                                <i class="fa-solid fa-chart-line"></i>
+                                <i class="fa-solid fa-chart-line" aria-label="Strategy Consulting Icon"></i>
                             </div>
-                            <h3 class="service-card-title">Strategy Consulting</h3>
+                            <h3 class="service-card-title" itemprop="serviceType">Strategy Consulting</h3>
                         </div>
-                        <p class="service-card-description">Transform your vision into action. Our strategic planning, product design, and operations efficiency solutions drive innovation and position your business for long-term success.</p>
+                        <p class="service-card-description" itemprop="description">Transform your vision into action. Our strategic planning, product design, and operations efficiency solutions drive innovation and position your business for long-term success.</p>
                     </div>
 
                     <div class="service-card">
                         <div class="service-card-header"> 
                             <div class="service-card-icon">
-                                <i class="fa-solid fa-dollar-sign"></i>
+                                <i class="fa-solid fa-dollar-sign" aria-label="Financial Consulting Icon"></i>
                             </div>
-                            <h3 class="service-card-title">Financial Consulting</h3>
+                            <h3 class="service-card-title" itemprop="serviceType">Financial Consulting</h3>
                         </div>
-                        <p class="service-card-description">Secure your financial future with confidence. We offer expert financial planning, health assessments, and modeling to ensure stability and growth for your business.</p>
+                        <p class="service-card-description" itemprop="description">Secure your financial future with confidence. We offer expert financial planning, health assessments, and modeling to ensure stability and growth for your business.</p>
                     </div>
 
                     <div class="service-card">
                         <div class="service-card-header"> 
                             <div class="service-card-icon">
-                                <i class="fa-solid fa-computer"></i>
+                                <i class="fa-solid fa-computer" aria-label="IT Technology Consulting Icon"></i>
                             </div>
-                            <h3 class="service-card-title">IT & Technology Consulting</h3>
+                            <h3 class="service-card-title" itemprop="serviceType">IT & Technology Consulting</h3>
                         </div>
-                        <p class="service-card-description">Embrace the future of tech with Lucida. From IT strategy and digital transformation to fintech and blockchain, we help you leverage technology for a competitive edge.</p>
+                        <p class="service-card-description" itemprop="description">Embrace the future of tech with Lucida. From IT strategy and digital transformation to fintech and blockchain, we help you leverage technology for a competitive edge.</p>
                     </div>
 
                     <div class="service-card">
                         <div class="service-card-header"> 
                             <div class="service-card-icon">
-                                <i class="fa-solid fa-globe"></i>
+                                <i class="fa-solid fa-globe" aria-label="Marketing Consulting Icon"></i>
                             </div>
-                            <h3 class="service-card-title">Marketing Consulting</h3>
+                            <h3 class="service-card-title" itemprop="serviceType">Marketing Consulting</h3>
                         </div>
-                        <p class="service-card-description">Amplify your brand's reach. Our marketing strategies, digital SEO, social media, and content solutions ensure your business stands out in a crowded market.</p>
+                        <p class="service-card-description" itemprop="description">Amplify your brand's reach. Our marketing strategies, digital SEO, social media, and content solutions ensure your business stands out in a crowded market.</p>
                     </div>
 
                     <div class="service-card">
                         <div class="service-card-header"> 
                             <div class="service-card-icon">
-                                <i class="fa-solid fa-tag"></i>
+                                <i class="fa-solid fa-tag" aria-label="Design Web Development Icon"></i>
                             </div>
-                            <h3 class="service-card-title">Design & Web Development</h3>
+                            <h3 class="service-card-title" itemprop="serviceType">Design & Web Development</h3>
                         </div>
-                        <p class="service-card-description">Make a lasting impression online. Our graphic design, website development, and e-commerce solutions create stunning, functional digital experiences for your business.</p>
+                        <p class="service-card-description" itemprop="description">Make a lasting impression online. Our graphic design, website development, and e-commerce solutions create stunning, functional digital experiences for your business.</p>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- This is the about us section with company information and features -->
         <section class="about-us-section">
             <div class="about-us-container">
                 <div class="about-us-left">
                     <span class="about-us-badge">About Us</span>
-                    <h2 class="about-us-heading">Your Partner in Business Growth</h2>
-                    <p class="about-us-description">
+                    <h2 class="about-us-heading" itemprop="name">Your Partner in Business Growth</h2>
+                    <p class="about-us-description" itemprop="description">
                         At Lucida, we're passionate about helping businesses like yours succeed with expert consulting tailored to your unique needs. Founded with a vision to empower businesses, Lucida combines innovative strategies, industry expertise, and a client-first approach to drive meaningful growth.
                     </p>
                     <ul class="about-us-features">
@@ -177,13 +194,16 @@ include 'includes/header.php';
             </div>
         </section>
 
+        <!-- This is the testimonials section displaying client reviews and feedback -->
         <section class="testimonials-section">
             <div class="container">
                 <h2 class="testimonials-main-title">What Our Clients Say</h2>
                 <p class="testimonials-subtitle">Don't just take our word for it. Hear directly from the businesses we've helped transform.</p>
 
+                <!-- This is the testimonial slider wrapper containing all testimonials -->
                 <div class="testimonial-slider-wrapper">
                     <div class="testimonial-slider">
+                        <!-- Loop through testimonials data and display each testimonial -->
                         <?php if (!empty($testimonials)): ?>
                             <?php foreach ($testimonials as $index => $testimonial): ?>
                                 <div class="testimonial-item <?php echo $index === 0 ? 'active' : ''; ?>" data-index="<?php echo $index; ?>">
@@ -208,6 +228,7 @@ include 'includes/header.php';
                     </div>
                 </div>
 
+                <!-- Display navigation buttons only if there are multiple testimonials -->
                 <?php if (count($testimonials) > 1): ?>
                 <div class="testimonial-navigation">
                     <button id="prevTestimonial" class="nav-button" aria-label="Previous Testimonial">
@@ -220,19 +241,25 @@ include 'includes/header.php';
                 <?php endif; ?>
             </div>
         </section>
+        <!-- Include the contact form component -->
         <?php include 'includes/contactform.php'; ?>
     </main> 
+<!-- Include the site footer -->
 <?php include 'includes/footer.php'; ?>
+    <!-- JavaScript for testimonial slider functionality (only if multiple testimonials) -->
     <?php if (count($testimonials) > 1): ?>
     <script>
+        // Initialize testimonial slider when page loads
         document.addEventListener('DOMContentLoaded', function () {
             const testimonialItems = document.querySelectorAll('.testimonial-item');
             const prevButton = document.getElementById('prevTestimonial');
             const nextButton = document.getElementById('nextTestimonial');
             
+            // Check if elements exist before adding event listeners
             if (testimonialItems.length > 0 && prevButton && nextButton) {
                 let currentIndex = 0;
 
+                // Function to show specific testimonial by index
                 function showTestimonial(index) {
                     testimonialItems.forEach((item, i) => {
                         item.classList.remove('active');
@@ -242,20 +269,57 @@ include 'includes/header.php';
                     });
                 }
 
+                // Previous button click handler
                 prevButton.addEventListener('click', function () {
                     currentIndex = (currentIndex - 1 + testimonialItems.length) % testimonialItems.length;
                     showTestimonial(currentIndex);
                 });
 
+                // Next button click handler
                 nextButton.addEventListener('click', function () {
                     currentIndex = (currentIndex + 1) % testimonialItems.length;
                     showTestimonial(currentIndex);
                 });
 
-
+                // Initialize by showing the first testimonial
                 showTestimonial(currentIndex);
             }
         });
     </script>
     <?php endif; ?>
+
+<!-- Additional Schema.org Structured Data for Testimonials -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Lucida Management Group",
+    "description": "Expert business consulting services",
+    "telephone": "+1-816-327-0142",
+    "url": "https://lucidamanagement.com",
+    "priceRange": "$$",
+    "review": [
+        <?php foreach ($testimonials as $index => $testimonial): ?>
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "<?php echo htmlspecialchars($testimonial['name']); ?>"
+            },
+            "reviewBody": "<?php echo htmlspecialchars($testimonial['quote']); ?>",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5",
+                "bestRating": "5"
+            }
+        }<?php echo ($index < count($testimonials) - 1) ? ',' : ''; ?>
+        <?php endforeach; ?>
+    ],
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "<?php echo count($testimonials); ?>"
+    }
+}
+</script>
 

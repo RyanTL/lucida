@@ -1,25 +1,40 @@
 <?php 
+// SEO Configuration for Services Page
+$page_title = "Professional Business Consulting Services | Lucida Management Group";
+$page_description = "Discover comprehensive business consulting services including management, strategy, financial, IT, marketing consulting, and web development. Expert solutions for business growth and digital transformation.";
+$page_keywords = "business consulting services, management consulting, strategy consulting, financial consulting, IT consulting, marketing consulting, web development services, business growth solutions, digital transformation, professional consulting";
+$canonical_url = "https://lucidamanagement.com/pages/services.php";
+$og_image = "https://lucidamanagement.com/Lucida/public/images/logo.svg";
+$page_type = "website";
+
+// This is the services page displaying all company services and process
+// Include the site header
 include '../includes/header.php'; 
 ?>
 
+<!-- Main container for services page content -->
 <main class="services-page-main-container">
+    <!-- Hero section with services page title and description -->
     <section class="services-hero-section">
         <div class="container">
             <div class="services-hero-content">
                 <div class="services-hero-left">
                     <span class="services-page-label">Our services</span>
-                    <h1 class="services-page-title">We offer a wide range of service</h1>
+                    <h1 class="services-page-title" itemprop="name">We offer a wide range of service</h1>
                 </div>
                 <div class="services-hero-right">
-                    <p>Tailored consulting services design to address you specific challenges and unlock your business potential.</p>
+                    <p itemprop="description">Tailored consulting services design to address you specific challenges and unlock your business potential.</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Services grid section displaying all service cards -->
     <section class="services-grid-section">
         <div class="container">
+            <!-- Grid container for service cards -->
             <div class="s-grid">
+                <!-- Management Consulting service card -->
                 <a href="/Lucida/pages/contact.php?service=Management%20Consulting" class="s-card-link">
                 <div class="s-card">
                     <div class="s-card-icon-wrapper bg-management">
@@ -38,6 +53,7 @@ include '../includes/header.php';
                 </div>
                 </a>
 
+                <!-- Strategy Consulting service card -->
                 <a href="/Lucida/pages/contact.php?service=Strategy%20Consulting" class="s-card-link">
                 <div class="s-card">
                     <div class="s-card-icon-wrapper bg-strategy">
@@ -55,6 +71,7 @@ include '../includes/header.php';
                 </div>
                 </a>
 
+                <!-- Financial Consulting service card -->
                 <a href="/Lucida/pages/contact.php?service=Financial%20Consulting" class="s-card-link">
                 <div class="s-card">
                     <div class="s-card-icon-wrapper bg-financial">
@@ -72,6 +89,7 @@ include '../includes/header.php';
                 </div>
                 </a>
 
+                <!-- IT & Technology Consulting service card -->
                 <a href="/Lucida/pages/contact.php?service=IT%20%26%20Technology%20Consulting" class="s-card-link">
                 <div class="s-card">
                     <div class="s-card-icon-wrapper bg-it">
@@ -90,6 +108,7 @@ include '../includes/header.php';
                 </div>
                 </a>
 
+                <!-- Marketing Consulting service card -->
                 <a href="/Lucida/pages/contact.php?service=Marketing%20Consulting" class="s-card-link">
                 <div class="s-card">
                     <div class="s-card-icon-wrapper bg-marketing">
@@ -107,6 +126,7 @@ include '../includes/header.php';
                 </div>
                 </a>
 
+                <!-- Design & Web Development service card -->
                 <a href="/Lucida/pages/contact.php?service=Design%20%26%20Web%20Development" class="s-card-link">
                 <div class="s-card">
                     <div class="s-card-icon-wrapper bg-design">
@@ -126,12 +146,14 @@ include '../includes/header.php';
                 </a>
             </div>
 
+            <!-- Call-to-action section with schedule call button -->
             <div class="services-page-cta-container">
                 <a href="/Lucida/pages/contact.php" class="btn-schedule-call">Schedule A Call</a>
             </div>
         </div>
     </section>
 
+    <!-- How we deliver results section explaining our process -->
     <section class="how-we-deliver-section">
         <div class="container">
             <h2 class="hwd-main-title">How We Deliver Results</h2>
@@ -175,6 +197,7 @@ include '../includes/header.php';
         </div>
     </section>
 
+    <!-- Value and evidence section with statistics and guarantees -->
     <section class="value-evidence-section">
     <div class="container">
         <div class="value-bring-intro">
@@ -254,6 +277,83 @@ include '../includes/header.php';
     </div>
 </section>
 
+<!-- Schema.org Structured Data for Services -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "provider": {
+        "@type": "Organization",
+        "name": "Lucida Management Group",
+        "url": "https://lucidamanagement.com"
+    },
+    "serviceType": [
+        "Management Consulting",
+        "Strategy Consulting",
+        "Financial Consulting", 
+        "IT & Technology Consulting",
+        "Marketing Consulting",
+        "Design & Web Development"
+    ],
+    "areaServed": "Worldwide",
+    "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Business Consulting Services",
+        "itemListElement": [
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Management Consulting",
+                    "description": "General Management consulting, Business Planning, Startup Consulting, Small Business Consulting, Digital Management Consulting, Digital Business consulting"
+                }
+            },
+            {
+                "@type": "Offer", 
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Strategy Consulting",
+                    "description": "Organizational Strategy Consulting, Strategic Planning, Product Design, Operations Efficiency Consulting, Innovation and New Product Development"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service", 
+                    "name": "Financial Consulting",
+                    "description": "Financial Planning, General Business Accounting, Financial Stability Efficiency, Financial Health Assessment, Financial Modeling and Analysis"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "IT & Technology Consulting", 
+                    "description": "Information Technology Strategy, Digital Transformation Consulting, Banking and Fintech, Internet of Things Consulting (IoT), Cryptocurrencies Consulting, Blockchain Consulting"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Marketing Consulting",
+                    "description": "Marketing Strategy Consulting, Digital Marketing & SEO Consulting, SEO Consulting, Social Media Marketing Consulting, Content Marketing Consulting"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Design & Web Development",
+                    "description": "Graphic Design Services, Website Design, Small Business Website, Storefronts, E-commerce"
+                }
+            }
+        ]
+    }
+}
+</script>
+
 <?php 
+// Include the site footer
 include '../includes/footer.php';
 ?>
