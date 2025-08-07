@@ -1,8 +1,8 @@
 <?php
 // SEO Configuration for Homepage
-$page_title = "Expert Business Consulting Services | Lucida Management Group";
-$page_description = "Transform your business with Lucida Management Group's expert consulting services. We specialize in management, strategy, financial, IT, marketing consulting, and web development. Get started today!";
-$page_keywords = "business consulting, management consulting services, strategy consulting, financial consulting, IT consulting, marketing consulting, web development, business growth, digital transformation, startup consulting, leadership coaching";
+$page_title = "Lucida Management Group - Kansas City Business Consulting | Management, Strategy, Financial & IT Consulting";
+$page_description = "Lucida Management Group - Kansas City's premier business consulting firm. Expert management, strategy, financial, IT, marketing consulting, and web development services. Located at 723 E 18th St, Suite 1010, Kansas City, MO. Call (816) 237-0142.";
+$page_keywords = "kansas city business consulting, management consulting services, strategy consulting, financial consulting, IT consulting, technology consulting, marketing consulting, web development, digital transformation, startup consulting, leadership coaching, business planning, project management, blockchain consulting, fintech, IOT consulting, cryptocurrency, training workshops, business coaching";
 $canonical_url = "https://lucidamanagement.com/";
 $og_image = "https://lucidamanagement.com/Lucida/public/images/bg.webp";
 $page_type = "website";
@@ -292,11 +292,19 @@ include 'includes/header.php';
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": "ProfessionalService",
     "name": "Lucida Management Group",
-    "description": "Expert business consulting services",
-    "telephone": "+1-816-327-0142",
+    "description": "Lucida Management Group provides comprehensive business consulting services including management consulting, strategy consulting, financial consulting, IT & technology consulting, marketing consulting, and web development in Kansas City, Missouri.",
+    "telephone": "+1-816-237-0142",
     "url": "https://lucidamanagement.com",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "723 E 18TH ST STE 1010",
+        "addressLocality": "Kansas City",
+        "addressRegion": "Missouri",
+        "postalCode": "64108"
+    },
+    "email": "contact@lucidamanagementgroup.com",
     "priceRange": "$$",
     "review": [
         <?php foreach ($testimonials as $index => $testimonial): ?>

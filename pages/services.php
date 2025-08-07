@@ -1,8 +1,8 @@
 <?php 
 // SEO Configuration for Services Page
-$page_title = "Professional Business Consulting Services | Lucida Management Group";
-$page_description = "Discover comprehensive business consulting services including management, strategy, financial, IT, marketing consulting, and web development. Expert solutions for business growth and digital transformation.";
-$page_keywords = "business consulting services, management consulting, strategy consulting, financial consulting, IT consulting, marketing consulting, web development services, business growth solutions, digital transformation, professional consulting";
+$page_title = "Kansas City Business Consulting Services | Management, Strategy, Financial & IT | Lucida Management Group";
+$page_description = "Expert business consulting services in Kansas City, MO. Lucida Management Group offers management, strategy, financial, IT & technology, marketing consulting, and web development. Located at 723 E 18th St, Suite 1010. Call (816) 237-0142.";
+$page_keywords = "kansas city business consulting, management consulting services, strategy consulting, financial consulting, IT technology consulting, blockchain consulting, fintech consulting, IOT consulting, cryptocurrency consulting, marketing consulting, web development services, digital transformation, business planning, startup consulting, project management consulting, business coaching, leadership coaching, corporate training";
 $canonical_url = "https://lucidamanagement.com/pages/services.php";
 $og_image = "https://lucidamanagement.com/Lucida/public/images/logo.svg";
 $page_type = "website";
@@ -98,12 +98,11 @@ include '../includes/header.php';
                     <h3 class="s-card-title">IT & Technology Consulting</h3>
                     <p class="s-card-description">Embrace the future of tech with Lucida. From IT strategy and digital transformation to fintech and blockchain, we help you leverage technology for a competitive edge.</p>
                     <ul class="s-card-features">
-                        <li><i class="fas fa-check"></i> Information Technology Strategy</li>
+                        <li><i class="fas fa-check"></i> Information Technology (IT) Strategy</li>
                         <li><i class="fas fa-check"></i> Digital Transformation Consulting</li>
                         <li><i class="fas fa-check"></i> Banking and Fintech</li>
                         <li><i class="fas fa-check"></i> Internet of Things Consulting (IoT)</li>
-                        <li><i class="fas fa-check"></i> Cryptocurrencies Consulting</li>
-                        <li><i class="fas fa-check"></i> Blockchain Consulting</li>
+                        <li><i class="fas fa-check"></i> Cryptocurrencies & Blockchain Consulting</li>
                     </ul>
                 </div>
                 </a>
@@ -118,8 +117,7 @@ include '../includes/header.php';
                     <p class="s-card-description">Amplify your brand's reach. Our marketing strategies, digital SEO, social media, and content solutions ensure your business stands out in a crowded market.</p>
                     <ul class="s-card-features">
                         <li><i class="fas fa-check"></i> Marketing Strategy Consulting</li>
-                        <li><i class="fas fa-check"></i> Digital Marketing & SEO Consulting</li>
-                        <li><i class="fas fa-check"></i> SEO Consulting</li>
+                        <li><i class="fas fa-check"></i> Digital Marketing & Search Engine Optimization Consulting</li>
                         <li><i class="fas fa-check"></i> Social Media Marketing Consulting</li>
                         <li><i class="fas fa-check"></i> Content Marketing Consulting</li>
                     </ul>
@@ -138,9 +136,7 @@ include '../includes/header.php';
                         <li><i class="fas fa-check"></i> Graphic Design Services</li>
                         <li><i class="fas fa-check"></i> Website Design</li>
                         <li><i class="fas fa-check"></i> Small Business Website</li>
-                        <li><i class="fas fa-check"></i> Storefronts</li>
-                        <li><i class="fas fa-check"></i>E-commerce</li>
-
+                        <li><i class="fas fa-check"></i> Storefronts & E-Commerce</li>
                     </ul>
                 </div>
                 </a>
@@ -164,7 +160,7 @@ include '../includes/header.php';
                         <img src="/Lucida/public/images/proposal.svg" alt="Our Proposal Icon"> 
                     </div>
                     <h3 class="hwd-column-title">Our Proposal</h3>
-                    <p class="hwd-column-description">We start by understanding your unique challenges and goals. Through in-depth consultations, we craft a customized proposal that outlines the best path forward for your business—whether it's management, financial, or digital transformation consulting.</p>
+                    <p class="hwd-column-description">We start by understanding your unique challenges and goals. Through in depth consultations, we craft a customized proposal that outlines the best path forward for your business whether it's management, financial, or digital transformation consulting.</p>
                 </div>
 
                 <div class="hwd-divider-column">
@@ -188,7 +184,7 @@ include '../includes/header.php';
                         <img src="/Lucida/public/images/strategy.svg" alt="Our Strategy Icon"> 
                     </div>
                     <h3 class="hwd-column-title">Our Strategy</h3>
-                    <p class="hwd-column-description">Finally, we execute with precision. Our team implements tailored strategies—whether it's launching a new product, optimizing your finances, or building a stunning website—while providing ongoing support and training to drive lasting success.</p>
+                    <p class="hwd-column-description">Finally, we execute with precision. Our team implements tailored strategies whether it's launching a new product, optimizing your finances, or building a stunning website while providing ongoing support and training to drive lasting success.</p>
                 </div>
             </div>
             <div class="hwd-cta-container">
@@ -217,10 +213,6 @@ include '../includes/header.php';
                 <span class="stat-number">35%</span>
                 <p class="stat-description">Faster Growth Potential</p>
             </div>
-            <div class="stat-card">
-                <span class="stat-number">100%</span>
-                <p class="stat-description">Client Satisfaction</p>
-            </div>
         </div>
 
         <div class="evidence-guarantee-container">
@@ -241,7 +233,7 @@ include '../includes/header.php';
                         </li>
                         <li>
                             <span class="evidence-dot"></span>
-                            <strong>Client-Centric Focus</strong>
+                            <strong>Client Centric Focus</strong>
                             <p>Your goals are our priority. We work closely with you to ensure every solution is tailored to your unique needs.</p>
                         </li>
                     </ul>

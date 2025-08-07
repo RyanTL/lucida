@@ -1083,7 +1083,7 @@ h1, h2, h3 {
 
 .w-w-t-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 30px;
 }
 
@@ -1138,7 +1138,7 @@ h1, h2, h3 {
 
 .industries-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     text-align: left;
 }
@@ -1208,7 +1208,7 @@ h1, h2, h3 {
 
 .team-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
 
@@ -2321,10 +2321,39 @@ h1, h2, h3 {
    10. RESPONSIVE MEDIA QUERIES
    =================================================================== */
 
+/* --- Large Desktop (4-column layout) --- */
+@media (min-width: 1201px) {
+    .team-member-card .card-top {
+        height: 110px;
+    }
+    
+    .team-member-card .card-content {
+        padding: 18px 20px 20px 20px;
+    }
+    
+    .team-member-card .member-description {
+        min-height: 65px;
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+    
+    .team-member-card .profile-image {
+        width: 85px;
+        height: 85px;
+    }
+}
+
+/* --- Tablet Landscape Mode --- */
+@media (max-width: 1200px) and (min-width: 1025px) {
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 /* --- Large Devices (Desktops, etc.) --- */
 @media (max-width: 1024px) {
     .team-grid {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(2, 1fr);
     }
     
     /* Evidence Excellence Card Responsive */
@@ -2351,6 +2380,18 @@ h1, h2, h3 {
     .value-stats-cards-container {
         grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
         gap: 20px;
+    }
+    
+    /* Industries grid responsive - maintain 3 columns but allow smaller cards */
+    .industries-grid {
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+        gap: 20px;
+    }
+    
+    /* Who We Target grid responsive - 2x2 layout on medium screens */
+    .w-w-t-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
     }
 }
 
@@ -2424,6 +2465,7 @@ h1, h2, h3 {
     .about-us-features li {
         text-align: left;
     }
+    
     
     .evidence-guarantee-container {
         padding: 35px 25px;
@@ -2508,9 +2550,77 @@ h1, h2, h3 {
     .mission-vision-section { padding: 60px 5%; }
 }
 
+/* --- Medium-Small Devices (Small Tablets) --- */
+@media (max-width: 900px) {
+    /* Industries grid - keep 3 columns but with tighter spacing */
+    .industries-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+    
+    .industry-card {
+        padding: 25px 20px;
+    }
+    
+    /* Who We Target grid - maintain 2x2 with tighter spacing */
+    .w-w-t-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .w-w-t-card {
+        padding: 30px 15px;
+    }
+}
+
 /* --- Small Devices (Landscape Phones, etc.) --- */
 @media (max-width: 768px) {
     .container { width: 90%; }
+
+    /* Fix for About Us Content Card - "The power of consulting" section */
+    .decorative-card-wrapper {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    
+    .about-us-content-card {
+        padding: 25px 20px;
+        background-color: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        margin: 0 auto;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .card-title-main {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+    
+    .card-stats-text {
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+    
+    .card-separator-container {
+        margin: 15px auto;
+        width: 60px;
+    }
+    
+    .card-cta-button-main {
+        padding: 10px 20px;
+        font-size: 14px;
+        display: block;
+        text-align: center;
+        max-width: 200px;
+        margin: 0 auto;
+    }
+    
+    .decorative-background-svg {
+        display: none;
+    }
 
     /* Responsive Header */
     .header-container {
@@ -2735,7 +2845,29 @@ h1, h2, h3 {
         padding-bottom: 30px;
     }
 
-    .card-cta-button-main { padding: 10px 25px; font-size: 14px; }
+    /* Additional mobile adjustments for "The power of consulting" card */
+    .decorative-card-wrapper {
+        padding: 0 5px;
+    }
+    
+    .about-us-content-card {
+        padding: 20px 15px;
+        margin: 0 5px;
+    }
+    
+    .card-title-main {
+        font-size: 16px;
+    }
+    
+    .card-stats-text {
+        font-size: 13px;
+    }
+    
+    .card-cta-button-main { 
+        padding: 10px 20px; 
+        font-size: 13px;
+        max-width: 180px;
+    }
     
     /* Evidence Excellence Card Responsive */
     .evidence-guarantee-container {

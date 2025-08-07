@@ -23,7 +23,7 @@ include '../includes/header.php';
                 <div class="sts-card">
                     <span class="sts-card-number">01</span>
                     <h3 class="sts-card-title" itemprop="serviceType">1:1 Business Coaching & Consulting</h3>
-                    <p class="sts-card-description" itemprop="description">Unlock your business's potential with personalized guidance. Our one-on-one coaching sessions provide actionable strategies to help you overcome challenges, set clear goals, and achieve sustainable growth.</p>
+                    <p class="sts-card-description" itemprop="description">Unlock your business's potential with personalized guidance. Our one on one coaching sessions provide actionable strategies to help you overcome challenges, set clear goals, and achieve sustainable growth.</p>
                 </div>
                 <!-- Leadership Coaching service card -->
                 <div class="sts-card">
@@ -41,12 +41,12 @@ include '../includes/header.php';
                 <div class="sts-card">
                     <span class="sts-card-number">04</span>
                     <h3 class="sts-card-title">Business and Financial Literacy</h3>
-                    <p class="sts-card-description">Gain the knowledge to make informed decisions. Our business and financial literacy training equips you with the tools to understand finances, manage budgets, and plan for long-term success.</p>
+                    <p class="sts-card-description">Gain the knowledge to make informed decisions. Our business and financial literacy training equips you with the tools to understand finances, manage budgets, and plan for long term success.</p>
                 </div>
                 <!-- Business Webinars service card -->
                 <div class="sts-card">
                     <span class="sts-card-number">05</span>
-                    <h3 class="sts-card-title">Business webinars</h3>
+                    <h3 class="sts-card-title">Business webinars and workshops</h3>
                     <p class="sts-card-description">Stay ahead with our expert-led webinars. Covering topics like digital marketing, strategy, and technology trends, our sessions provide valuable insights to help your business thrive.</p>
                 </div>
                 <!-- Call-to-action button cell -->
@@ -65,7 +65,7 @@ include '../includes/header.php';
             <div class="up-text-content-wrapper">
                 <h2 class="up-title">Your peace of mind is our top priority</h2>
                 <p class="up-main-description">
-                    Your safety and comfort come first. Trust us to handle everything with care and dedication. Relax—we’ve got you covered.
+                    Your safety and comfort come first. Trust us to handle everything with care and dedication. Relax we’ve got you covered.
                 </p>
 
                 <!-- Accordion items for expandable content -->

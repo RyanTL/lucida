@@ -1,8 +1,8 @@
 <?php
 // SEO Configuration for About Page
-$page_title = "About Lucida Management Group | Expert Business Consulting Team";
-$page_description = "Learn about Lucida Management Group's experienced team of business consultants. We specialize in management, strategy, financial, and technology consulting to help businesses achieve sustainable growth.";
-$page_keywords = "about lucida management group, business consulting team, management consulting experts, strategy consultants, business consulting company, professional consulting services, business growth specialists";
+$page_title = "About Lucida Management Group | Kansas City Business Consulting Team | Irwing Martinez & Milosz Straub";
+$page_description = "Meet Lucida Management Group's Kansas City business consulting team led by Irwing Martinez and Milosz Straub. Located at 723 E 18th St, Suite 1010, Kansas City, MO 64108. Expert management, strategy, financial & IT consulting. Call (816) 237-0142.";
+$page_keywords = "lucida management group kansas city, irwing martinez ceo, milosz straub cfo, business consulting team, management consulting experts, strategy consultants, financial consulting, IT consulting, business consulting company, professional consulting services, business growth specialists, kansas city consultants";
 $canonical_url = "https://lucidamanagement.com/pages/about.php";
 $og_image = "https://lucidamanagement.com/Lucida/public/images/logo.svg";
 $page_type = "website";
@@ -13,31 +13,31 @@ $team_members = [
     [
         'image' => 'https://placehold.co/100x100/E0E0E0/B0B0B0?text=I.M.',
         'name' => 'Irwing Martinez',
-        'role' => 'CEO & Founder',
-        'description' => 'Our team of seasoned professionals brings diverse expertise and a passion for excellence to every project we undertake.',
-        'tags' => ['Business Development', 'Leadership']
+        'role' => 'President, Chairman & Secretary',
+        'description' => 'Irwing leads Lucida Management Group with extensive experience in business development, strategic planning, and entrepreneurial ventures. His vision drives our mission to empower businesses of all sizes.',
+        'tags' => ['Business Development', 'Leadership', 'Strategic Planning']
     ],
     [
-        'image' => 'https://placehold.co/100x100/E0E0E0/B0B0B0?text=P.R.',
-        'name' => 'Pepito Rodriguez',
-        'role' => 'CEO & Founder',
-        'description' => 'Our team of seasoned professionals brings diverse expertise and a passion for excellence to every project we undertake.',
-        'tags' => ['Business Development', 'Leadership']
+        'image' => 'https://placehold.co/100x100/E0E0E0/B0B0B0?text=M.S.',
+        'name' => 'Milosz Straub',
+        'role' => 'Chief Financial Officer & Treasurer',
+        'description' => 'Milosz brings financial expertise and analytical insight to our team, ensuring our clients receive sound financial guidance and strategic support for sustainable growth.',
+        'tags' => ['Financial Analysis', 'Corporate Finance', 'Strategic Planning']
     ],
     [
-        'image' => 'https://placehold.co/100x100/E0E0E0/B0B0B0?text=P.R.',
-        'name' => 'Pepito Rodriguez',
-        'role' => 'CEO & Founder',
-        'description' => 'Our team of seasoned professionals brings diverse expertise and a passion for excellence to every project we undertake.',
-        'tags' => ['Business Development', 'Leadership']
+        'image' => 'https://placehold.co/100x100/E0E0E0/B0B0B0?text=R.T.',
+        'name' => 'Ryan Torres',
+        'role' => 'Software Developer',
+        'description' => 'Ryan specializes in developing innovative software solutions and digital transformation initiatives. He brings technical expertise to help clients leverage technology for competitive advantage.',
+        'tags' => ['Software Development', 'Digital Transformation', 'Technology Solutions']
     ],
     [
-        'image' => 'https://placehold.co/100x100/E0E0E0/B0B0B0?text=P.R.',
-        'name' => 'Pepito Rodriguez',
-        'role' => 'CEO & Founder',
-        'description' => 'Our team of seasoned professionals brings diverse expertise and a passion for excellence to every project we undertake.',
-        'tags' => ['Business Development', 'Leadership']
-    ],
+        'image' => 'https://placehold.co/100x100/E0E0E0/B0B0B0?text=G.',
+        'name' => 'Giezi',
+        'role' => 'Graphic Artist',
+        'description' => 'Giezi creates compelling visual designs and brand experiences that help our clients communicate their message effectively and stand out in the marketplace.',
+        'tags' => ['Graphic Design', 'Brand Identity', 'Visual Communication']
+    ]
 ];
 
 // Include the site header
@@ -53,16 +53,15 @@ include '../includes/header.php';
                 <span class="awwa-label">ABOUT US</span>
                 <h1 class="awwa-heading">WHO WE ARE</h1>
                 <p class="awwa-description">
-                    At Lucida, we’re more than just consultants—we’re your partners in
-                    progress. With a passion for clarity and a commitment to results,
-                    we empower businesses to navigate complexity, seize
-                    opportunities, and achieve sustainable success. Our team brings
-                    together deep expertise across management, strategy, finance,
-                    technology, marketing, and design to deliver tailored solutions that
-                    drive growth and innovation. Whether you’re a startup dreaming
-                    big or an established organization aiming to evolve, we illuminate
-                    the path forward with practical insights and transformative
-                    strategies. At Lucida, your vision becomes our mission.
+                Lucida Management Group is a forward-thinking consulting firm dedicated to supporting businesses and
+                entrepreneurs at every stage. Our mission begins with delivering insightful management guidance and
+                consulting services, which empower clients to be able to build up and scale sustainable ventures. We
+                assist not only established enterprises, but also startups and aid them to acclimate, offering data-focused
+                strategies and innovation which can equip clients to clearly navigate the business world.
+                We go beyond consulting by fostering entrepreneurial success through various strategies and keys to
+                success, designed to break down barriers to entry and provide foundational skills to clients, achieving
+                sustained success, where our vision is to foster a vibrant business ecosystem where enterprises of all sizes
+                can grow and thrive.
                 </p>
             </div>
             <div class="awwa-right-content">
@@ -76,14 +75,6 @@ include '../includes/header.php';
                 <div class="awwa-logo-item"><img src="/Lucida/public/images/awk-logo-white.png" alt="Client Logo 1"></div>
                 <div class="awwa-logo-item"><img src="/Lucida/public/images/lucida-mg-logo-white.png" alt="Lucida Management Group"></div>
                 <div class="awwa-logo-item"><img src="/Lucida/public/images/awk-logo-white.png" alt="Client Logo 2"></div>
-                <div class="awwa-logo-item"><img src="/Lucida/public/images/lucida-mg-logo-white.png" alt="Lucida Management Group"></div>
-                <div class="awwa-logo-item"><img src="/Lucida/public/images/awk-logo-white.png" alt="Client Logo 3"></div>
-                <div class="awwa-logo-item"><img src="/Lucida/public/images/lucida-mg-logo-white.png" alt="Lucida Management Group"></div>
-                <div class="awwa-logo-item"><img src="/Lucida/public/images/awk-logo-white.png" alt="Client Logo 1"></div>
-                <div class="awwa-logo-item"><img src="/Lucida/public/images/lucida-mg-logo-white.png" alt="Lucida Management Group"></div>
-                <div class="awwa-logo-item"><img src="/Lucida/public/images/awk-logo-white.png" alt="Client Logo 2"></div>
-                <div class="awwa-logo-item"><img src="/Lucida/public/images/lucida-mg-logo-white.png" alt="Lucida Management Group"></div>
-                <div class="awwa-logo-item"><img src="/Lucida/public/images/awk-logo-white.png" alt="Client Logo 3"></div>
                 <div class="awwa-logo-item"><img src="/Lucida/public/images/lucida-mg-logo-white.png" alt="Lucida Management Group"></div>
             </div>
         </div>
@@ -131,20 +122,45 @@ include '../includes/header.php';
             <div class="mv-main-mission">
                 <h2 class="mv-title mv-title-main">Our Mission</h2>
                 <div class="mv-main-mission-text-box">
-                    <p>At Lucida, we're more than just consultants we're your partners in progress. With a passion for clarity and a commitment to results, we empower businesses to navigate complexity, seize opportunities, and achieve sustainable success. Our team brings together deep expertise across management, strategy, finance, technology, marketing, and design to deliver tailored solutions that drive growth and innovation. Whether you're a startup dreaming big or an established organization aiming to evolve, we illuminate the path forward with practical insights and transformative strategies. At Lucida, your vision becomes our mission.</p>
+                <p>
+                Lucida Management Group is dedicated to helping businesses and entrepreneurs thrive by providing the
+                tools, expertise and support necessary for sustainable growth and operational excellence through tools
+                and connecting to experienced industry specialists who can deliver tailored solutions that can address
+                unique business challenges. By emphasizing data-driven insights, financial resilience and market
+                positioning, Lucida enables clients to navigate today’s complex economic landscape with confidence.
+                Our mission is to foster a business community where organizations of all sizes can leverage strategic
+                guidance in order to build resilient, successful ventures.
+                </p>
                 </div>
             </div>
 
             <div class="mv-columns-wrapper">
                 <div class="mv-column mv-vision-column">
                     <h3 class="mv-title mv-title-sub">Our Vision</h3>
-                    <p>We envision a world where every business thrives. At Lucida, we turn complexity into opportunity with innovation, strategy, and guidance empowering you to achieve your biggest goals.</p>
+                    <p>
+                    Lucida Management Group aims to become a leading consulting
+                    firm that empowers businesses and entrepreneurs through strategic
+                    guidance and comprehensive support services. Our vision en
+                    expanding into financial services including financial planning,
+                    investment advice, and funding solutions alongside comprehensive
+                    marketing services such as brand building, market research, digital
+                    strategies, and performance analytics. This integrated approach will
+                    create a robust network that supports our clients growth and financial
+                    stability across all stages of the business cycle.
+                    </p>
                 </div>
                 <div class="mv-divider"></div>
                 <div class="mv-column mv-mission-column-sub">
                     <h3 class="mv-title mv-title-sub">Company Culture</h3>
                     <p>
-                     We stand for integrity, hard work, and impact. At Lucida, there’s no room for racism, bias, or discrimination only respect, collaboration, and progress.
+                    At Lucida Management Group, we are built on integrity, hard work,
+                    and meaningful impact. We maintain a zero tolerance policy for racism,
+                    bias, or discrimination, fostering instead an environment of respect, 
+                    collaboration, and progress. We believe that diverse perspectives and
+                    ethical practices drive exceptional results for our clients while
+                    contributing to a more equitable business landscape. Our values guide
+                    every decision, ensuring that as we help businesses grow, we uphold the
+                    highest standards of professionalism.
                     </p>
                 </div>
             </div>
@@ -185,7 +201,7 @@ include '../includes/header.php';
     </div>
 </section>
 <!-- Commented out section for how we work -->
-<!--
+<!-- 
 <section class="how-we-work-section">
         <div class="hww-container">
             <div class="hww-left-content">
@@ -214,8 +230,8 @@ include '../includes/header.php';
                 <img src="/Lucida/public/images/laptopaboutus.png" alt="Team working collaboratively on a laptop with analytical charts" class="hww-image">
             </div>
         </div>
-</section>
--->
+</section> -->
+
 
 <!-- This is the team section displaying team member cards -->
 <section class="team-section">
